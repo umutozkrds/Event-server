@@ -32,7 +32,7 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use('/images', express.static(path.join('backend/images')));
 
 app.use(cors({
-    origin: ['http://localhost:4200', 'https://res.cloudinary.com', 'http://eventnest.online', 'https://event-server-9iz5.onrender.com'],
+    origin: ['http://localhost:4200', 'https://res.cloudinary.com', 'https://eventnest.online'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization']
 }));
